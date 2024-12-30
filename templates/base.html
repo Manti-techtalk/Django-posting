@@ -8,13 +8,15 @@
     <title>{%block title%}Django Project {% endblock%}</title>
 </head>
 <body>
-    <header class='bg-light d-flex align-items-center p-4'>
-        <ul class='list-inline'>
-            <li class='list-inline-item'><a href="/">Home</a></li>
-            <li class='list-inline-item'><a href="/about">About</a></li>
-            <li class='list-inline-item'><a href="/posts">Posts</a></li>
-        </ul>
-    </header>
-    {%block content%}{%endblock%}
+    <div class="container-fluid">
+            <header class='bg-light d-flex align-items-center p-4 '>
+                <ul class='list-inline'>
+                    <li class='list-inline-item'><a href="/">Home</a></li>
+                    <li class='list-inline-item'><a href="/about">About</a></li>
+                    <li class='list-inline-item'><a href="/posts">Posts</a></li>
+                </ul>
+            </header>
+            {%block content%}{%endblock%}
+</div>
 </body>
 </html>
